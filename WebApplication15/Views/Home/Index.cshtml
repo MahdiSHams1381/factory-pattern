@@ -1,0 +1,16 @@
+﻿@{
+    List<String> model ;
+}
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+        @{
+            foreach (String x in Model)
+            {
+                <a> @x</a>
+                <br />
+            }
+    }
+</div>
